@@ -1,17 +1,20 @@
-<<<<<<< HEAD
-# React + Vite
+# MxExchanger-Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MXExchanger Frontend is a **React-based user interface** for the MXExchanger currency exchange platform.  
+It allows users to convert **PKR ⇄ USD**, deposit, withdraw, and send money securely using unique account numbers.  
+The frontend communicates with the backend via **RESTful APIs** to provide real-time balances and transaction history.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Features
 
-## Expanding the ESLint configuration
+- PKR ⇄ USD currency conversion with real-time rates  
+- Deposit and withdraw money from user account  
+- Send money to other users using unique account numbers  
+- View transaction history  
+- Responsive UI for desktop and mobile  
+- JWT-based authentication for secure access  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# MxExchanger-Fronted
-MXExchanger Frontend is a React-based interface for currency exchange. Users can convert PKR ⇄ USD, deposit, withdraw, and send money using unique account numbers. It shows real-time balances and transaction history, connecting securely to the backend via RESTful APIs.
->>>>>>> 79e92c6ecba2fc39e2bb8d59f87021ffe201409d
+---
+
+
