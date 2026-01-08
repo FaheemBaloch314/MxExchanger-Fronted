@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -10,3 +11,7 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=======
+# MxExchanger-Fronted
+MXExchanger Frontend is a React-based interface for currency exchange. Users can convert PKR ⇄ USD, deposit, withdraw, and send money using unique account numbers. It shows real-time balances and transaction history, connecting securely to the backend via RESTful APIs.
+>>>>>>> 79e92c6ecba2fc39e2bb8d59f87021ffe201409d
