@@ -1,0 +1,134 @@
+.left-transtion {
+    background-color: rgb(35, 40, 51);
+    width: 800px;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+
+    color: white;
+
+    h2 {
+        color: white;
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: -1px;
+        word-spacing: -2px;
+        padding: 5px;
+        color: white;
+    }
+
+    .transtions {
+        font-size: 20px;
+        text-align: center;
+        color: purple;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+    }
+
+    .info {
+        padding: 20px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .transtionId {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        font-size: 20px;
+        margin-top: 22px;
+        padding: 20px;
+
+        >input {
+            padding: 10px;
+            width: 300px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        >button {
+            width: 200px;
+            padding: 10px;
+            color: black;
+            font-size: 18px;
+            cursor: pointer;
+
+            border: none;
+
+            &:first-child {
+                background-color: green;
+
+                &:hover {
+                    background-color: rgba(23, 126, 23, 0.767);
+                }
+
+            }
+
+            &:last-child {
+                background-color: red;
+
+                &:hover {
+                    background-color: rgba(194, 15, 15, 0.842);
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:582px) {
+    .left-transtion{
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .transtions{
+            font-size: 16px;
+            padding: 8px;
+        }
+        .info{
+            justify-content: space-between;
+            width: 100%;
+            h4{
+                font-size: 15px;
+            }
+
+        }
+        .transtionId{
+            padding: 3px;
+            padding-bottom: 30px;
+            >label{
+                font-size: 15px;
+            }
+            >input{
+                width: 200px;
+            }
+        }
+
+    }
+}

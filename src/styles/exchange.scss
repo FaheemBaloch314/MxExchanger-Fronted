@@ -1,0 +1,171 @@
+.Exchaner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    height: 70vh;
+
+
+
+    .left {
+        background-color: rgb(35, 40, 51);
+        width: 40%;
+        border-radius: 14px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .information {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+
+            >h3 {
+                color: purple;
+                font-size: 34px;
+                padding-left: 30px;
+                padding-top: 10px;
+            }
+
+            >p {
+                color: white;
+                font-size: 18px;
+                padding-bottom: 15px;
+                padding-left: 25px;
+            }
+        }
+
+        .currancys {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            width: 100%;
+
+            .first,
+            .sencond {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                width: 50%;
+                padding: 30px;
+
+                >select {
+                    width: 100%;
+                    padding: 10px;
+                }
+
+            }
+        }
+
+        .btn {
+            margin-top: 30px;
+        }
+
+        p {
+            color: white;
+            font-size: 18px;
+            margin-top: 10px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .right {
+        width: 40%;
+        height: 40%;
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        background-color: purple;
+
+        .uper,
+        .lower {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            >.uper-left,
+            .lower-left {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+
+                p {
+                    font-size: 18px;
+                    text-align: start;
+                    padding-left: 10px;
+                    color: white;
+                }
+
+                select {
+                    padding: 8px;
+                    border: none;
+                    outline: none;
+                    margin-bottom: 18px;
+                }
+
+            }
+
+            .uper-right,
+            .lower-right {
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input {
+                    width: 100%;
+                    padding: 10px;
+                    outline: none;
+                    border: 0.1px solid purple;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width:1162px) {
+    .Exchaner{
+        flex-direction: column;
+        margin-top: 100px;
+        .left{
+            width: 80%;
+        }
+        .right{
+            width: 80%;
+        }
+    }
+}
+
+
+
+@media (max-width:566px) {
+    .Exchaner{
+
+        .left{
+            width: 95%;
+            .information{
+                h3{
+                    font-size: 30px;
+                    text-align: start;
+
+                }
+            }
+            .currancys{
+                gap: 2px;
+            }
+        }
+
+    }
+}

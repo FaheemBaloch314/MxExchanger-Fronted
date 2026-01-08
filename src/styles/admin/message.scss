@@ -1,0 +1,86 @@
+.allMessages {
+    width: 100%;
+    height: 70vh;
+    margin-top: 7%;
+
+    >h3 {
+        text-align: center;
+        font-size: 40px;
+        color: purple;
+    }
+
+    .contant {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        >.card {
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+            color: white;
+            border-radius: 10px;
+
+            .persnalInfo {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                border-radius: 10px 10px 0px 0px;
+                padding-top: 5px;
+                padding-bottom: 10px;
+                background-color: rgba(214, 91, 214, 0.534);
+                margin-bottom: 10px;
+            }
+
+            .message {
+                width: 100%;
+                height: 80%;
+                margin-top: 10px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+
+                overflow: scroll;
+            }
+
+
+        }
+
+    }
+}
+
+@media (max-width:1546px) {
+    .allMessages {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width:1188px) {
+    .allMessages {
+        margin-top: 12%;
+    }
+}
+
+@media (max-width:904px) {
+    .allMessages {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width:552px) {
+    .allMessages {
+        margin-top: 18%;
+    }
+}
+
+@media (max-width:439px) {
+    .allMessages {
+        margin-top: 20%;
+    }
+}

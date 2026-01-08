@@ -1,0 +1,156 @@
+.users {
+    padding: 2rem;
+    margin-top: 5%;
+
+    >h3 {
+        font-size: 35px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: purple;
+    }
+
+    table {
+        width: 100%;
+        border: none;
+        border-collapse: collapse; // For better cell spacing control on mobile
+
+        th,
+        td {
+            padding: 0.75rem;
+            text-align: left;
+            border: none;
+            font-size: 16px;
+        }
+
+        th {
+            color: #555;
+            font-weight: 600;
+        }
+
+        td svg {
+            color: #ff4d4f;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        td svg:hover {
+            transform: scale(1.2);
+            color: #d9363e;
+        }
+
+        // For Mobile responsiveness
+        @media (max-width: 768px) {
+
+            th,
+            td {
+                font-size: 14px; // Reduce font size on mobile
+            }
+
+            td svg {
+                font-size: 1.5rem; // Smaller icons for mobile
+            }
+
+            // Adjust padding for smaller screens
+            th,
+            td {
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+.pagination {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    button {
+        padding: 6px 12px;
+        background-color: purple;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
+    }
+
+    span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    // For mobile pagination
+    @media (max-width: 768px) {
+        button {
+            padding: 4px 8px; // Smaller padding on mobile
+            font-size: 14px; // Smaller font size for buttons on mobile
+        }
+
+        span {
+            font-size: 14px; // Smaller page number text on mobile
+        }
+    }
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        color: #444;
+    }
+
+    .modal-actions {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        button {
+            padding: 0.6rem 1.4rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .confirm {
+            background-color: #ff4d4f;
+            color: white;
+        }
+
+        .cancel {
+            background-color: #ddd;
+        }
+    }
+}
